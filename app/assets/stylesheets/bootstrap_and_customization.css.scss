@@ -1,18 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=lato:400,700);
 
-$body-bg:	black;
+$body-bg:	white;
 $font-family-sans-serif:	'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-height: 55px;
 $navbar-default-bg:  black;
 $navbar-default-link-color: #c0392b;
 $brand-primary: #c0392b;
-$jumbotron-bg: white;
+$jumbotron-bg: black;
 $btn-default-color: black;
 $brand-success: #3498db;
-$btn-default-bg: silver;
-$btn-default-color: black;
+$btn-default-bg: white;
 $btn-info-bg: white;
 $btn-info-color: black;
+
 @import 'bootstrap-sprockets';
 
 @import 'bootstrap';
@@ -28,6 +28,20 @@ $btn-info-color: black;
 body {
     color: white;
 }
+
+
 #home-page-text {
+	color: white;
+}
+
+#about-page-text {
 	color: black;
 }
+
+body {
+	color: black;
+}
+
+
+
+
