@@ -4,18 +4,18 @@
       <h2><%= pluralize(@pin.errors.count, "error") %> prohibited this pin from being saved:</h2>
 
       <ul>
-      <% @pin.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+      <% @pin.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
 
-  <div class="field", class="form-group">
-    <%= f.label :description %><br>
+  <div class="form-group">
+    <%= f.label :description %>
     <%= f.text_field :description, class: "form-control" %>
   </div>
-  <div class="actions". class="form-groups">
+  <div class="form-group">
     <%= f.submit class: "btn btn-primary" %>
   </div>
 <% end %>

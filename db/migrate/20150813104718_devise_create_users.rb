@@ -1,5 +1,6 @@
 class DeviseCreateUsers < ActiveRecord::Migration
   def change
+    drop_table :users
     create_table(:users) do |t|
       ## Database authenticatable
       t.string :email,              null: false, default: ""
@@ -31,7 +32,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       # t.datetime :locked_at
 
 
-      t.timestamps null: false
+      t.timestamps
     end
 
     add_index :users, :email,                unique: true
