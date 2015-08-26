@@ -81,6 +81,7 @@ Rails.application.configure do
     #note to set this to your actual host
 config.action_mailer.default_url_options = { host: 'humble-pirates.herokuapp.com' }
   #Sets paperclip to upload images to Amazon s3
+
 config.paperclip_defaults = {
   :storage => :s3,
   :s3_credentials => {
