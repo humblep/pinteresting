@@ -1,8 +1,6 @@
 <div id="home-page-text" class="jumbotron center">
 	<h1>Welcome to Humble Pirates</h1>
-	
-	<% if user_signed_in? %>
-			<% else %>
+
 			<p>
 				<%= link_to "Log in", new_user_session_path, class: "btn btn-default btn" %>
 				<%= link_to "Sign up", new_user_registration_path, class: "btn btn-default" %></p>
@@ -10,5 +8,5 @@
 				<p>Follow us on <%= link_to "Instagram", "https://instagram.com/humblepirates/", class: "btn btn-primary btn-lg" %></p>
 	
 				<p>Follow us on <%= link_to "Twitter", "https://twitter.com/humblepirates", class: 'btn btn-success btn-lg' %></p>
-	<% end %>
+	
 </div>
