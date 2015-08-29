@@ -5,5 +5,25 @@ class Pin < ActiveRecord::Base
 
 	validates :image, presence: true
   validates :description, presence: true
+
+
+  def shirts
+  	shirts = []
+  	Pin.each do |pin|
+  		if shirt?(pin)
+  			shirts << pin
+  		end
+  		shirt
+  	end
+  end
+
+  
+  def shirt?(pin)
+  	if pin.type == "shirts"
+  		true
+  	else
+  		false
+  	end
+  end
 end
 
